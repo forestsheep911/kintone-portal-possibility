@@ -3,7 +3,7 @@ const { resolve } = require('path')
 module.exports = {
   name: `${pj.name}`,
   namespace: `https://github.com/${pj.author}/monkey-${pj.name}`,
-  match: ['https://*'],
+  match: ['https://*.cybozu.cn/k/'],
   grant: ['GM_getValue', 'GM_setValue', 'GM_addValueChangeListener'],
   require: [`file://${resolve(__dirname, '../dist/dev').replaceAll('\\', '/')}/${pj.name}.script.js`],
 }
